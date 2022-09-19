@@ -10,10 +10,14 @@ function App() {
         <Container>
           <Navbar.Brand href="/">Market</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => { navigate("/") }}>Home</Nav.Link>
-            <Nav.Link onClick={() => { navigate("/menu") }}>Menu</Nav.Link>
+            <Nav.Link onClick={() => { navigate("/menu") }}>메뉴</Nav.Link>
+          </Nav>
+          <Nav className="user-login">
+            <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
+            <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
+
       </Navbar>
     </div>
   );
