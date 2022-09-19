@@ -17,8 +17,30 @@ function App() {
             <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
-
       </Navbar>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <div className="banner"></div>
+
+            </div>
+          }
+        />
+    </Routes>
+      
+
+
+
+
+
+
+
+
+
+      />
     </div>
   );
 }
