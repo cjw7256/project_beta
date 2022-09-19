@@ -10,7 +10,7 @@
 
 .banner {
   background-image: url('./images/banner_bg.jpg');
-  height: 400px;
+  height: 30rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
