@@ -8,6 +8,7 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
+import DesktopList from "./DesktopList.js";
 import axios from "axios";
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
                       size="lg"
                       title="카테고리"
                     >
-                      <Dropdown.Item eventKey="1">데스크톱</Dropdown.Item>
+                      <Dropdown.Item eventKey="1" onClick={() => { navigate("/desktoplist") }}>데스크톱</Dropdown.Item>
                       <Dropdown.Item eventKey="2">노트북</Dropdown.Item>
                       <Dropdown.Divider />
                       <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
@@ -101,6 +102,7 @@ function App() {
 
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
+        <Route path="/desktoplist" element={<DesktopList/>} />
         <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
 
 
