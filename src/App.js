@@ -4,6 +4,8 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
+import axios from "axios";
+
 function App() {
   let navigate = useNavigate();
   let [desktops, setDesktop] = useState([
@@ -74,7 +76,7 @@ function App() {
 
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
-
+        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
 
 
       </Routes>
