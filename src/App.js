@@ -1,5 +1,9 @@
 import './App.css';
-import { Button, Navbar, Nav, Container, Row, Col, Card, } from "react-bootstrap";
+import { Button, Navbar, Nav, 
+  Container, Row, Col, Card,
+  DropdownButton, SplitButton,
+  ButtonGroup, Dropdown
+} from "react-bootstrap";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
@@ -45,7 +49,24 @@ function App() {
         <Container>
           <Navbar.Brand href="/">Market</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => { navigate("/menu") }}>메뉴</Nav.Link>
+          <div className="mb-2">
+                  {[DropdownButton].map((DropdownType, idx) => (
+                    <DropdownType
+                      as={ButtonGroup}
+                      key={idx}
+                      id={`dropdown-button-drop-${idx}`}
+                      size="lg"
+                      title="카테고리"
+                    >
+                      <Dropdown.Item eventKey="1">데스크톱</Dropdown.Item>
+                      <Dropdown.Item eventKey="2">노트북</Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
+                      <Dropdown.Item eventKey="4">키보드</Dropdown.Item>
+                      <Dropdown.Item eventKey="5">헤드셋</Dropdown.Item>
+                    </DropdownType>
+                  ))}
+                </div>
           </Nav>
           <Nav className="user-login">
             <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
@@ -59,7 +80,11 @@ function App() {
           path="/"
           element={
             <div>
-              <div className="banner"></div>
+              <div className="banner">
+
+                
+
+              </div>
               <Container>
                 <Row sm={1} md={3}>
                   {desktops.map((data, i) => {
