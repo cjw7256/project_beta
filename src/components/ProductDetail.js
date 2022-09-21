@@ -21,7 +21,6 @@ function ProductDetail({ desktops }) {
         </ListGroup>
         <Card.Body>
           <Button variant="primary">담기</Button>
-          
         </Card.Body>
       </Card>
     </div>
