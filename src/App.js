@@ -9,6 +9,8 @@ import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
 import DesktopList from "./DesktopList.js";
+import UserLogin from "./UserLogin.js";
+
 
 
 function App() {
@@ -147,6 +149,8 @@ function App() {
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
         <Route path="/desktoplist" element={<DesktopList/>} />
+        <Route path="/login" element={<UserLogin/>} />
+        
         <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
 
 
