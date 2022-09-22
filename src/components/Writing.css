@@ -10,11 +10,10 @@ body {
   .todoHeader {
     background-color: lightgray;
     text-align: left;
-    padding:30px;
+    padding:10px;
   }
   
   .todoSection {
     background-color: lightgraywhite;
-    padding:10px 30px;
     text-align: left;
   }

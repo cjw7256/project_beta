@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+.hold{
+  position: sticky;
+  top:0;
+  padding:10px;
+  z-index: 10;
+  
+}
+
 .loginBox{
   width: 500px;
   height: 500px;

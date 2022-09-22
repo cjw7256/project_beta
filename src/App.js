@@ -94,7 +94,7 @@ function App() {
   
   return (
     <div className="App">
-      <Navbar bg="light" variant="light">
+      <Navbar bg="light" variant="light" className='hold'>
         <Container>
           <Navbar.Brand href="/">Market</Navbar.Brand>
           <Nav className="me-auto">

@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 function WritingItem({ writingData, data, setWritingData, buttonStyle, dataId }) {
-  //여기서만 필요한 애들은
-  //여기서 별도로 useState 만들어서 사용하면 됨.
-  //수정중인지 체크랑, 수정중인 텍스트
   let [isModifying, setIsModifying] = useState(false);
   let [inputName, setInputName] = useState("");
 
@@ -21,9 +18,8 @@ function WritingItem({ writingData, data, setWritingData, buttonStyle, dataId })
     //여기서 저장하는 과정을 작성
 
     //1. 저장하려는 텍스트를 불러와야한다.
-    console.log(inputName);
     //2. 텍스트를 저장하려는 todoData 대상에 itemName에 저장한다.
-    //찾는기준 ?유니크한 id를 기준으로 todoData에서 찾아서 바꾸면~
+    //찾는기준 ?유니크한 id를 기준으로 writingData에서 찾아서 바꾸면~
     let temp = writingData.map((tempData) => {
       if (tempData.writingId === dataId) {
         tempData.writingItemName = inputName;
@@ -31,7 +27,6 @@ function WritingItem({ writingData, data, setWritingData, buttonStyle, dataId })
       return tempData;
     });
     setWritingData(temp);
-    // data.itemName = inputName;
     //3. 저장 다했으면, 수정화면X 목록보이는 화면 전환
     setIsModifying(false);
     setInputName("");
