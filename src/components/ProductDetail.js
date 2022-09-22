@@ -6,6 +6,7 @@ import "./Writing.css";
 
 function ProductDetail({ desktops }) {
   let { id } = useParams();
+  
   let desktopInfo = desktops.find((data, i) => {
     return data.id == id;
   });
@@ -58,30 +59,26 @@ function ProductDetail({ desktops }) {
               onChange={(event) => {
                 setInputValue(event.target.value); //input 안에 입력된 text에 접근 가능
               }} />
+
             <button onClick={(event) => {
               event.preventDefault(); //form 양식에서 버튼이눌리면 (submit) -> submit일어나면 페이지갱신
-
               //여기서 먼저 값이 있는지 체크
-
               //안되는 경우면 수행이 안되도록 미리필터
               if (inputValue.trim() === "") { //텍스트가 없으면
                 return; // 아무것도 저장안하고 종료
               }
-
               let addItem = {
                 writingId: writingData.length + 1,
                 writingItemName: inputValue.trim(),
-                finished: false
+                finished: false,
               }
               let temp = [...writingData];
               temp.push(addItem);
               setWritingData(temp);
-
-              //여기서 지워야됩니다~~~
               setInputValue('');
-
             }}>저장</button>
           </form>
+
           <br />
 
           {

@@ -9,14 +9,15 @@ import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
 import DesktopList from "./DesktopList.js";
-import UserLogin from "./UserLogin.js";
-import UserJoin from "./UserJoin.js";
+import UserLogin from "./components/UserLogin.js";
+import UserJoin from "./components/UserJoin.js";
 
 
 
 
 function App() {
   let navigate = useNavigate();
+  let [showLogin, setShowLogin] = useState(true)
   let [desktops, setDesktop] = useState([
 
     {
@@ -96,7 +97,7 @@ function App() {
     <div className="App">
       <Navbar bg="light" variant="light" className='hold'>
         <Container>
-          <Navbar.Brand href="/">Market</Navbar.Brand>
+          <Navbar.Brand href="/">COMSCLUB</Navbar.Brand>
           <Nav className="me-auto">
           <div className="mb-2">
                   {[DropdownButton].map((DropdownType, idx) => (
@@ -118,7 +119,11 @@ function App() {
                 </div>
           </Nav>
           <Nav className="user-login">
-            <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
+            <Nav.Link onClick={() => {
+              if(showLogin===true){
+              navigate("/login")
+              }
+              }}>로그인</Nav.Link>
             <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
@@ -151,7 +156,7 @@ function App() {
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
         <Route path="/desktoplist" element={<DesktopList/>} />
-        <Route path="/login" element={<UserLogin/>} />
+        <Route path="/login" element={<UserLogin showLogin={showLogin} setShowLogin={setShowLogin}/>} />
         <Route path="/join" element={<UserJoin/>} />
         
         <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
