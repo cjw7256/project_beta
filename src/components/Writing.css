@@ -1,0 +1,20 @@
+body {
+    background-color: lightgray;
+  }
+  
+  .container {
+    width:1000px;
+    margin:0 auto;
+  }
+  
+  .todoHeader {
+    background-color: lightgray;
+    text-align: left;
+    padding:30px;
+  }
+  
+  .todoSection {
+    background-color: lightgraywhite;
+    padding:10px 30px;
+    text-align: left;
+  }
