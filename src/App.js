@@ -37,7 +37,7 @@ function App() {
     {
       id: 'ds001',
       itemName: '평범해보이지만 비싼거',
-      content: '최신형 데스크탑',
+      content: 'CPU:i5-1240P\nRAM:LPDDR55200 MHz\nSSD:256GB(NVMe'+(<sup>TM</sup>)+') +확장 슬롯1',
       price: '1,000,000원',
       price2: 1000000,
       imgPath: "http://192.168.0.63:8898/images/computer1.jpg"
@@ -171,8 +171,8 @@ function App() {
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/keybord1.jpg" /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/keyboard1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/Headset1.jpg" /></SwiperSlide>
                   
                 </Swiper>
               </div>
