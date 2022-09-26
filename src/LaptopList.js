@@ -2,8 +2,8 @@ import './App.css';
 import { Container, Row,Button } from "react-bootstrap";
 import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
-import DesktopCard from './components/DesktopCard.js'
-import ProductDetail from "./components/ProductDetail.js";
+import LaptopCard from './components/LaptopCard.js'
+import LaptopDetail from "./components/LaptopDetail.js";
 
 
 function LaptopList() {
@@ -13,81 +13,75 @@ function LaptopList() {
 
     {
       id: 'ls001',
-      itemName: '그램360 16TD90Q-GX56K',
-      content: 'CPU:i5-1240P\nRAM:LPDDR55200 MHz\nSSD:256GB(NVMe'+<sup>TM</sup>+') +확장 슬롯1',
-      price: '1,000,000원',
-      price2: 1000000,
-      imgPath: "http://192.168.0.63:8898/images/computer1.jpg"
+      itemName: 'LG울트라PC엣지 16U70Q-GA56K',
+      content: 'CPU:AMD Ryzen5 5625U프로세서\nRAM:16GB\nSSD:256GB\n그래픽카드:AMD Radeon 내장형',
+      price: '1,259,000원',
+      price2: 1259000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop1.jpg"
     },
     {
-      id: 'ds002',
-      itemName: '화려해보이지만',
-      content: '그저그런 데스크탑',
-      price: '800,000원',
-      price2: 800000,
-      imgPath: "http://192.168.0.63:8898/images/computer2.jpg"
+      id: 'ls002',
+      itemName: 'LG 그램360 16TD90Q-GX56K',
+      content: 'CPU:i5-1240P\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:인텔 내장형',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop2.jpg"
     },
     {
-      id: 'ds003',
-      itemName: '디아블로사양에 맞춘',
-      content: '구형 데스크탑',
-      price: '600,000원',
-      price2: 600000,
-      imgPath: "http://192.168.0.63:8898/images/computer3.jpg"
+      id: 'ls003',
+      itemName: 'DELL G15 DG5520-WH04KR',
+      content: 'CPU:i7-12700H\nRAM:16GB\nSSD:512GB\n그래픽카드:RTX3070Ti 8GB GDDR6',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop3.jpg"
     },
     {
-      id: "ds004",
-      itemName: "굉장히비싼",
-      content: "고성능 데스크탑",
-      price: '1,500,000원',
-      price2: 1500000,
-      // imgPath: "http://192.168.0.55:8898/images/food4.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer4.jpg",
+      id: 'ls004',
+      itemName: '맥북프로 13 M1',
+      content: 'CPU:기타\nRAM:8GB\nSSD:512GB\n그래픽카드:기타',
+      price: '1,741,200원',
+      price2: 1741200,
+      imgPath: "http://192.168.0.63:8898/images/Laptop4.jpg"
     },
     {
-      id: "ds005",
-      itemName: "피시방에서 자주본",
-      content: "배틀그라운드 전용 데스크탑",
-      price: "800,000원",
-      price2: 800000,
-      // imgPath: "http://192.168.0.55:8898/images/food5.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer5.jpg",
+      id: 'ls005',
+      itemName: '맥북프로 13 M2',
+      content: 'CPU:기타\nRAM:16GB\nSSD:256GB\n그래픽카드:기타',
+      price: '1,858,200원',
+      price2: 1858200,
+      imgPath: "http://192.168.0.63:8898/images/Laptop5.jpg"
     },
     {
-      id: "ds006",
-      itemName: "그래픽카드만 좋은",
-      content: "이상한 데스크탑",
-      price: "700,000원",
-      price2: 700000,
-      // imgPath: "http://192.168.0.55:8898/images/food6.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer6.jpg",
+      id: 'ls006',
+      itemName: 'ASUS OLED 터치 R7',
+      content: 'CPU:AMD Ryzen 7\nRAM:16GB MHz\nSSD:512GB\n그래픽카드:RTX3050Ti',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop6.jpg"
     },
     {
-      id: "ds007",
-      itemName: "아파트처럼 생긴",
-      content: "별거없는 데스크탑",
-      price: "600,000원",
-      price2: 600000,
-      // imgPath: "http://192.168.0.55:8898/images/food7.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer7.jpg",
+      id: 'ls007',
+      itemName: 'ASUS 젠북14 UX5400ZB-L7027W',
+      content: 'CPU:INTEL Core i5\nRAM:16GB\nSSD:512GB\n그래픽카드:기타',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop7.jpg"
     },
     {
-      id: "ds008",
-      itemName: "흰색이라 때가잘타는",
-      content: "비싼 데스크탑",
-      price: "1,200,000원",
-      price2: 1200000,
-      // imgPath: "http://192.168.0.55:8898/images/food8.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer8.jpg",
+      id: 'ls008',
+      itemName: 'LG 울트라PC 엣지 16UD70Q-GX56K',
+      content: 'CPU:AMD RYZEN 5000 SERIES\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:기타',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop8.jpg"
     },
     {
-      id: "ds009",
-      itemName: "블링블링",
-      content: "이쁜 분홍색 데스크탑",
-      price: "1,300,000원",
-      price2: 1300000,
-      // imgPath: "http://192.168.0.55:8898/images/food9.jpg",
-      imgPath: "http://127.0.0.1:8898/images/computer9.jpg",
+      id: 'ls009',
+      itemName: 'Victus 16-e0108AX_ND4',
+      content: 'CPU:AMD R5-5600H\nRAM:32GB \nSSD:512GB\n그래픽카드:RTX3050Ti',
+      price: '1,199,000원',
+      price2: 1199000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop9.jpg"
     },
   ])
 
@@ -122,9 +116,8 @@ function LaptopList() {
               <Container>
                 <Row sm={1} md={3}>
                   {Laptops.map((data, i) => {
-                    //foods 배열 안에 data와 i(인덱스)
                     return (
-                      <DesktopCard key={data.id} Laptops={Laptops} desktop={data} i={i} />
+                      <LaptopCard key={data.id} Laptops={Laptops} laptop={data} i={i} />
                     );
                   })}
                 </Row>
@@ -133,8 +126,8 @@ function LaptopList() {
             </div>
           }
         />
-        <Route path="/ProductDetail/:id" element={<ProductDetail Laptops={Laptops} />} />
-        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
+        <Route path="/LaptopDetail/:id" element={<LaptopDetail Laptops={Laptops} />} />
+        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.111</div>} />
 
       </Routes>
     </div>

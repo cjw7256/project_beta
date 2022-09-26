@@ -134,7 +134,7 @@ function DesktopList() {
           }
         />
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
-        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
+        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.222</div>} />
 
       </Routes>
     </div>

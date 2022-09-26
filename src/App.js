@@ -9,7 +9,9 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
+import LaptopDetail from "./components/LaptopDetail.js";
 import DesktopList from "./DesktopList.js";
+import LaptopList from "./LaptopList.js";
 import UserLogin from "./components/UserLogin.js";
 import UserJoin from "./components/UserJoin.js";
 
@@ -37,7 +39,7 @@ function App() {
     {
       id: 'ds001',
       itemName: '평범해보이지만 비싼거',
-      content: 'CPU:i5-1240P\nRAM:LPDDR55200 MHz\nSSD:256GB(NVMe'+(<sup>TM</sup>)+') +확장 슬롯1',
+      content: '최신형 데스크탑',
       price: '1,000,000원',
       price2: 1000000,
       imgPath: "http://192.168.0.63:8898/images/computer1.jpg"
@@ -113,7 +115,81 @@ function App() {
       imgPath: "http://127.0.0.1:8898/images/computer9.jpg",
     },
   ])
+  let [Laptops, setLaptops] = useState([
 
+    {
+      id: 'ls001',
+      itemName: 'LG울트라PC엣지 16U70Q-GA56K',
+      content: 'CPU:AMD Ryzen5 5625U프로세서\nRAM:16GB\nSSD:256GB\n그래픽카드:AMD Radeon 내장형',
+      price: '1,259,000원',
+      price2: 1259000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop1.jpg"
+    },
+    {
+      id: 'ls002',
+      itemName: 'LG 그램360 16TD90Q-GX56K',
+      content: 'CPU:i5-1240P\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:인텔 내장형',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop2.jpg"
+    },
+    {
+      id: 'ls003',
+      itemName: 'DELL G15 DG5520-WH04KR',
+      content: 'CPU:i7-12700H\nRAM:16GB\nSSD:512GB\n그래픽카드:RTX3070Ti 8GB GDDR6',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop3.jpg"
+    },
+    {
+      id: 'ls004',
+      itemName: '맥북프로 13 M1',
+      content: 'CPU:기타\nRAM:8GB\nSSD:512GB\n그래픽카드:기타',
+      price: '1,741,200원',
+      price2: 1741200,
+      imgPath: "http://192.168.0.63:8898/images/Laptop4.jpg"
+    },
+    {
+      id: 'ls005',
+      itemName: '맥북프로 13 M2',
+      content: 'CPU:기타\nRAM:16GB\nSSD:256GB\n그래픽카드:기타',
+      price: '1,858,200원',
+      price2: 1858200,
+      imgPath: "http://192.168.0.63:8898/images/Laptop5.jpg"
+    },
+    {
+      id: 'ls006',
+      itemName: 'ASUS OLED 터치 R7',
+      content: 'CPU:AMD Ryzen 7\nRAM:16GB MHz\nSSD:512GB\n그래픽카드:RTX3050Ti',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop6.jpg"
+    },
+    {
+      id: 'ls007',
+      itemName: 'ASUS 젠북14 UX5400ZB-L7027W',
+      content: 'CPU:INTEL Core i5\nRAM:16GB\nSSD:512GB\n그래픽카드:기타',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop7.jpg"
+    },
+    {
+      id: 'ls008',
+      itemName: 'LG 울트라PC 엣지 16UD70Q-GX56K',
+      content: 'CPU:AMD RYZEN 5000 SERIES\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:기타',
+      price: '1,749,000원',
+      price2: 1749000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop8.jpg"
+    },
+    {
+      id: 'ls009',
+      itemName: 'Victus 16-e0108AX_ND4',
+      content: 'CPU:AMD R5-5600H\nRAM:32GB \nSSD:512GB\n그래픽카드:RTX3050Ti',
+      price: '1,199,000원',
+      price2: 1199000,
+      imgPath: "http://192.168.0.63:8898/images/Laptop9.jpg"
+    },
+  ])
 
 
   return (
@@ -132,7 +208,7 @@ function App() {
                   title="카테고리"
                 >
                   <Dropdown.Item eventKey="1" onClick={() => { navigate("/desktoplist") }}>데스크톱</Dropdown.Item>
-                  <Dropdown.Item eventKey="2">노트북</Dropdown.Item>
+                  <Dropdown.Item eventKey="2" onClick={() => { navigate("/laptoplist") }}>노트북</Dropdown.Item>
                   <Dropdown.Divider />
                   <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
                   <Dropdown.Item eventKey="4">키보드</Dropdown.Item>
@@ -168,11 +244,11 @@ function App() {
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" onClick={() => { navigate("/desktoplist") }}/></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" onClick={() => { navigate("/laptoplist") }}/></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/keyboard1.jpg" /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/Headset1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/Headse1.jpg" /></SwiperSlide>
                   
                 </Swiper>
               </div>
@@ -210,11 +286,13 @@ function App() {
 
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
-        <Route path="/desktoplist" element={<DesktopList />} />
+        <Route path="/LaptopDetail/:id" element={<LaptopDetail Laptops={Laptops} />} />
+        <Route path="/desktoplist/*" element={<DesktopList />} />
+        <Route path="/laptoplist/*" element={<LaptopList />} />
         <Route path="/login" element={<UserLogin showLogin={showLogin} setShowLogin={setShowLogin} />} />
         <Route path="/join" element={<UserJoin />} />
 
-        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
+        <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.333</div>} />
 
 
       </Routes>
