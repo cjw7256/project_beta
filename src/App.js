@@ -1,5 +1,6 @@
 import './App.css';
-import { Button, Navbar, Nav, 
+import {
+  Button, Navbar, Nav,
   Container, Row, Col, Card,
   DropdownButton, SplitButton,
   ButtonGroup, Dropdown
@@ -12,7 +13,19 @@ import DesktopList from "./DesktopList.js";
 import UserLogin from "./components/UserLogin.js";
 import UserJoin from "./components/UserJoin.js";
 
+import React, { useRef, } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./styles.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 
 function App() {
@@ -102,31 +115,31 @@ function App() {
   ])
 
 
-  
+
   return (
     <div className="App">
       <Navbar bg="light" variant="light" className='hold'>
         <Container>
           <Navbar.Brand href="/">COMSCLUB</Navbar.Brand>
           <Nav className="me-auto">
-          <div className="mb-2">
-                  {[DropdownButton].map((DropdownType, idx) => (
-                    <DropdownType
-                      as={ButtonGroup}
-                      key={idx}
-                      id={`dropdown-button-drop-${idx}`}
-                      size="lg"
-                      title="카테고리"
-                    >
-                      <Dropdown.Item eventKey="1" onClick={() => { navigate("/desktoplist") }}>데스크톱</Dropdown.Item>
-                      <Dropdown.Item eventKey="2">노트북</Dropdown.Item>
-                      <Dropdown.Divider />
-                      <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
-                      <Dropdown.Item eventKey="4">키보드</Dropdown.Item>
-                      <Dropdown.Item eventKey="5">헤드셋</Dropdown.Item>
-                    </DropdownType>
-                  ))}
-                </div>
+            <div className="mb-2">
+              {[DropdownButton].map((DropdownType, idx) => (
+                <DropdownType
+                  as={ButtonGroup}
+                  key={idx}
+                  id={`dropdown-button-drop-${idx}`}
+                  size="lg"
+                  title="카테고리"
+                >
+                  <Dropdown.Item eventKey="1" onClick={() => { navigate("/desktoplist") }}>데스크톱</Dropdown.Item>
+                  <Dropdown.Item eventKey="2">노트북</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
+                  <Dropdown.Item eventKey="4">키보드</Dropdown.Item>
+                  <Dropdown.Item eventKey="5">헤드셋</Dropdown.Item>
+                </DropdownType>
+              ))}
+            </div>
           </Nav>
           <Nav className="user-login">
             <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
@@ -140,23 +153,46 @@ function App() {
           path="/"
           element={
             <div>
-              <div className="banner"/>
+              <div className='slide'>
+                <Swiper
+                  spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/keybord1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" /></SwiperSlide>
+                  
+                </Swiper>
+              </div>
               <div>
-                <button onClick={()=>{
+                <Button onClick={() => {
                   let temp = [...desktops]
-                  temp = temp.sort((a,b)=>{
+                  temp = temp.sort((a, b) => {
                     return a.price2 - b.price2
                   })
                   setDesktop(temp)
-                }}>가격이 낮은순으로 정렬</button>
-                
-                <button onClick={()=>{
+                }}>가격이 낮은순으로 정렬</Button>
+                <br />
+                <br />
+                <Button onClick={() => {
                   let temp = [...desktops]
-                  temp = temp.sort((a,b)=>{
+                  temp = temp.sort((a, b) => {
                     return b.price2 - a.price2
                   })
                   setDesktop(temp)
-                }}>가격이 높은순으로 정렬</button>
+                }}>가격이 높은순으로 정렬</Button>
               </div>
               <Container>
                 <Row sm={1} md={3}>
@@ -174,10 +210,10 @@ function App() {
 
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
-        <Route path="/desktoplist" element={<DesktopList/>} />
-        <Route path="/login" element={<UserLogin showLogin={showLogin} setShowLogin={setShowLogin}/>} />
-        <Route path="/join" element={<UserJoin/>} />
-        
+        <Route path="/desktoplist" element={<DesktopList />} />
+        <Route path="/login" element={<UserLogin showLogin={showLogin} setShowLogin={setShowLogin} />} />
+        <Route path="/join" element={<UserJoin />} />
+
         <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.</div>} />
 
 

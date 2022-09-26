@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Row, } from "react-bootstrap";
+import { Container, Row,Button } from "react-bootstrap";
 import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
@@ -101,21 +101,22 @@ function DesktopList() {
             <div>
 
               <div>
-                <button  onClick={() => {
+                <Button  onClick={() => {
                   let temp = [...desktops]
                   temp = temp.sort((a, b) => {
                     return a.price2 - b.price2
                   })
                   setDesktop(temp)
-                }}>가격이 낮은순으로 정렬</button>
+                }}>가격이 낮은순으로 정렬</Button>
                 <br/>
-                <button onClick={() => {
+                <br/>
+                <Button onClick={() => {
                   let temp = [...desktops]
                   temp = temp.sort((a, b) => {
                     return b.price2 - a.price2
                   })
                   setDesktop(temp)
-                }}>가격이 높은순으로 정렬</button>
+                }}>가격이 높은순으로 정렬</Button>
               </div>
 
               <Container>
