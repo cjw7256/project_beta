@@ -11,7 +11,7 @@ function UserLogin() {
     return (
         <div className="loginBox">
             <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formBasId">
                     <Form.Control type="text" placeholder="아이디 입력" />
                     <Form.Text className="text-muted">
                 
@@ -23,11 +23,7 @@ function UserLogin() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={(e) => {
-                    
-                    alert('로그인 하셨습니다.')
-                    
-                    navigate("/") }}>
+                <Button variant="primary" type="submit">
                     로그인
                 </Button>
             </Form>
