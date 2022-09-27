@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react';
 import WritingItem from "./WritingItem.js";
 import "./Writing.css";
 
-function ProductDetail({ desktops }) {
+function MouseDetail({ mouses }) {
   let { id } = useParams();
   
-  let desktopInfo = desktops.find((data, i) => {
+  let mousesInfo = mouses.find((data, i) => {
     return data.id == id;
   });
 
@@ -31,14 +31,14 @@ function ProductDetail({ desktops }) {
   return (
     <div>
       <Card style={{ width: "50%", margin: "0 auto" }}>
-        <Card.Img variant="top" src={desktopInfo.imgPath} />
+        <Card.Img variant="top" src={mousesInfo.imgPath} />
         <Card.Body>
-          <Card.Title>{desktopInfo.itemName}</Card.Title>
+          <Card.Title>{mousesInfo.itemName}</Card.Title>
           <Card.Text></Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
-          <ListGroup.Item>{desktopInfo.content}</ListGroup.Item>
-          <ListGroup.Item>{desktopInfo.price}</ListGroup.Item>
+          <ListGroup.Item>{mousesInfo.content}</ListGroup.Item>
+          <ListGroup.Item>{mousesInfo.price}</ListGroup.Item>
         </ListGroup>
         <Card.Body>
           <Button variant="primary">담기</Button>
@@ -54,7 +54,6 @@ function ProductDetail({ desktops }) {
         </div>
 
         <div className="todoSection">
-          <h5>
           <form>
             <input value={inputValue} type="text" name="value" placeholder="상품평 입력"
               onChange={(event) => {
@@ -79,9 +78,9 @@ function ProductDetail({ desktops }) {
               setInputValue('');
             }}>저장</button>
           </form>
-          </h5>
+
           <br />
-          <h5>
+
           {
             writingData.map((data, i) => {
               return (
@@ -90,11 +89,10 @@ function ProductDetail({ desktops }) {
               );
             })
           }
-          </h5>
         </div>
       </div>
     </div>
   );
 }
 
-export default ProductDetail;
+export default MouseDetail;

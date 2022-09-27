@@ -129,7 +129,6 @@ function DesktopList() {
                   })}
                 </Row>
               </Container>
-
             </div>
           }
         />

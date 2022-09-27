@@ -9,23 +9,23 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
-import LaptopDetail from "./components/LaptopDetail.js";
 import DesktopList from "./DesktopList.js";
+import LaptopDetail from "./components/LaptopDetail.js";
 import LaptopList from "./LaptopList.js";
+import MouseDetail from "./components/MouseDetail.js";
+import MouseList from "./MouseList.js";
 import UserLogin from "./components/UserLogin.js";
 import UserJoin from "./components/UserJoin.js";
+
 
 import React, { useRef, } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "./styles.css";
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -190,6 +190,82 @@ function App() {
       imgPath: "http://192.168.0.63:8898/images/Laptop9.jpg"
     },
   ])
+  let [mouses, setMouses] = useState([
+
+    {
+      id: 'ms001',
+      itemName: '로지텍G402 Hyperion Fury 게이밍마우스',
+      content: '해상도:240-4000dpi\nUSB 보고율:1000Hz\n버튼 내구성:2000만 클릭\n무게:144g',
+      price: '49,900원',
+      price2: 49900,
+      imgPath: "http://192.168.0.63:8898/images/mouse1.jpg"
+    },
+    {
+      id: 'ms002',
+      itemName: '로지텍 G304 무선 게이밍 마우스',
+      content: '해상도:200-12000dpi\nUSB 보고율:1000Hz\n버튼 내구성:1000만 클릭\n무게:99g',
+      price: '44,690원',
+      price2: 44690,
+      imgPath: "http://192.168.0.63:8898/images/mouse2.jpg"
+    },
+    {
+      id: 'ms003',
+      itemName: 'AG0102 게이밍 유선 마우스',
+      content: '해상도:1800-12800dpi\n스캔율:7000fps\n버튼수:9개\n무게:116g',
+      price: '39,900원',
+      price2: 39900,
+      imgPath: "http://192.168.0.63:8898/images/mouse3.jpg"
+    },
+    {
+      id: 'ms004',
+      itemName: '로지텍G402 Hyperion Fury 게이밍마우스',
+      content: '해상도:200-4000dpi\nUSB 보고율:1000Hz\n버튼 수:8개\n무게:144g',
+      price: '49,900원',
+      price2: 49900,
+      imgPath: "http://192.168.0.63:8898/images/mouse4.jpg"
+    },
+    {
+      id: 'ms005',
+      itemName: 'Microsoft 스컬프트 에고노믹 마우스',
+      content: '송수신 장치 버전:Microsoft 2.4GHz\n무선 범위:3m\n무선 플랫폼:독점 2.4GHz\n배터리 수명:최대 12개월',
+      price: '49,000원',
+      price2: 49000,
+      imgPath: "http://192.168.0.63:8898/images/mouse5.jpg"
+    },
+    {
+      id: 'ms006',
+      itemName: '마이크로소프트 에고노믹 블루투스 무선마우스',
+      content: '무선주파수:2.4GHz 주파수 범위\n무선 범위:5~10m\n배터리 수명:최대 15개월\n무게:113g',
+      price: '49,900원',
+      price2: 49900,
+      imgPath: "http://192.168.0.63:8898/images/mouse6.jpg"
+    },
+    {
+      id: 'ms007',
+      itemName: '로지텍 멀티태스킹 무선마우스(M585)',
+      content: '해상도:1000dpi\n배터리 수명:최대 24개월*\n무선 범위:약 10M\n무게:101g',
+      price: '49,900원',
+      price2: 49900,
+      imgPath: "http://192.168.0.63:8898/images/mouse7.jpg"
+    },
+    {
+      id: 'ms008',
+      itemName: 'SPA-MMG1PUB 게이밍 마우스',
+      content: '해상도:200-10000dpi\n스캔율:5000FPS\n버튼 내구성:2천만번 클릭\n무게:126g',
+      price: '29,900원',
+      price2: 29900,
+      imgPath: "http://192.168.0.63:8898/images/mouse8.jpg"
+    },
+    {
+      id: 'ms009',
+      itemName: '로지텍G102 게이밍마우스',
+      content: '해상도:200-8000dpi\nUSB 보고율:1000Hz\n\n무게:85g',
+      price: '25,410원',
+      price2: 25410,
+      imgPath: "http://192.168.0.63:8898/images/mouse9.jpg"
+    },
+    
+  ])
 
 
   return (
@@ -210,7 +286,7 @@ function App() {
                   <Dropdown.Item eventKey="1" onClick={() => { navigate("/desktoplist") }}>데스크톱</Dropdown.Item>
                   <Dropdown.Item eventKey="2" onClick={() => { navigate("/laptoplist") }}>노트북</Dropdown.Item>
                   <Dropdown.Divider />
-                  <Dropdown.Item eventKey="3">마우스</Dropdown.Item>
+                  <Dropdown.Item eventKey="3" onClick={() => { navigate("/mouselist") }}>마우스</Dropdown.Item>
                   <Dropdown.Item eventKey="4">키보드</Dropdown.Item>
                   <Dropdown.Item eventKey="5">헤드셋</Dropdown.Item>
                 </DropdownType>
@@ -246,9 +322,9 @@ function App() {
                 >
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" onClick={() => { navigate("/desktoplist") }}/></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" onClick={() => { navigate("/laptoplist") }}/></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" onClick={() => { navigate("/MouseList") }} /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/keyboard1.jpg" /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/Headse1.jpg" /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/headset1.jpg" /></SwiperSlide>
                   
                 </Swiper>
               </div>
@@ -286,14 +362,15 @@ function App() {
 
 
         <Route path="/ProductDetail/:id" element={<ProductDetail desktops={desktops} />} />
-        <Route path="/LaptopDetail/:id" element={<LaptopDetail Laptops={Laptops} />} />
         <Route path="/desktoplist/*" element={<DesktopList />} />
+        <Route path="/LaptopDetail/:id" element={<LaptopDetail Laptops={Laptops} />} />
         <Route path="/laptoplist/*" element={<LaptopList />} />
+        <Route path="/MouseDetail/:id" element={<MouseDetail mouses={mouses} />} />
+        <Route path="/MouseList/*" element={<MouseList />} />
         <Route path="/login" element={<UserLogin showLogin={showLogin} setShowLogin={setShowLogin} />} />
         <Route path="/join" element={<UserJoin />} />
 
         <Route path="*" element={<div>잘못된 경로 입니다. 뒤로가기를 해주세요.333</div>} />
-
 
       </Routes>
     </div>
