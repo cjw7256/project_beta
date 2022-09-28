@@ -518,17 +518,17 @@ function App() {
               </Container>
               
               <div className='footer'>
-                <p style={{color:'gray'}}>G마켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 G마켓은 상품·거래 정보 및 가격에 대하여 책임을 지지 않습니다.
-본 사이트의 모든 정보, 콘텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 관련 법령에 의하여 엄격히 금지됩니다.콘텐츠산업 진흥법에 따른 표시
-
-Copyright Gmarket Inc. All rights reserved.</p>
+                <p style={{color:'gray', textAlign:'left', marginLeft:'10rem', marginTop:'2rem'}}>
+                  작성자 : 최정우<br/>
+                  주제 : PC 판매 마켓<br/>
+                  프로젝트기간 : 9월 19일 ~ 9월 30일<br/>
+                  사용한 기술 : (HTML, CSS, JavaScript, React)<br/>
+                  사용한 툴 : Visual Studio Code
+                </p>
               </div>
-
             </div>
           }
-        />
-      
-      
+        />    
 
 
 
