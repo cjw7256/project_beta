@@ -445,7 +445,7 @@ function App() {
             </div>
           </Nav>
           <Nav className="user-login">
-            <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
+            <Nav.Link onClick={() => { navigate("/login") }}>로그인132</Nav.Link>
             <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
