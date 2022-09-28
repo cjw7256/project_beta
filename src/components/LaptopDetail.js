@@ -47,14 +47,14 @@ function LaptopDetail({ Laptops }) {
       </Card>
 
 
-      <div className="container">
+      <div className="container" style={{margin:'10px'}}>
         <div className="todoHeader">
           <div>
             <h1>상품평을 작성해주세요</h1>
           </div>
         </div>
 
-        <div className="todoSection">
+        <div className="todoSection" style={{marginTop:'10px'}}>
           <form>
             <input value={inputValue} type="text" name="value" placeholder="상품평 입력"
               onChange={(event) => {
