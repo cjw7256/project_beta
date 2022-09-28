@@ -445,7 +445,7 @@ function App() {
             </div>
           </Nav>
           <Nav className="user-login">
-            <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
+            <Nav.Link onClick={() => { navigate("/login") }}>로그인123123</Nav.Link>
             <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
@@ -523,7 +523,7 @@ function App() {
                   주제 : PC 판매 마켓<br/>
                   프로젝트기간 : 9월 19일 ~ 9월 30일<br/>
                   사용한 기술 : (HTML, CSS, JavaScript, React)<br/>
-                  사용한 툴 : Visual Studio Code
+                  사용한 툴 : Visual Studio Code123123123
                 </p>
               </div>
             </div>
