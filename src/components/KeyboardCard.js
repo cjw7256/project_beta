@@ -4,7 +4,7 @@ function KeyboardCard( {keyboards, keyboard, i } ){
     let navigate = useNavigate();
     return (
         <Col>
-            <Card style={{ width: "18rem", cursor:"pointer" }} 
+            <Card style={{ width: "20rem",height:'35rem',margin:'1rem', cursor:"pointer" }} 
             onClick={ () => {navigate("/KeyboardDetail/" + keyboard.id)} }>
               <Card.Img variant="top" src={keyboards[i].imgPath} />
               <Card.Body>

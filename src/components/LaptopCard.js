@@ -4,7 +4,7 @@ function LaptopCard( {Laptops, laptop, i } ){
     let navigate = useNavigate();
     return (
         <Col>
-            <Card style={{ width: "18rem", cursor:"pointer" }} 
+            <Card style={{ width: "20rem",height:'35rem',margin:'1rem', cursor:"pointer" }} 
             onClick={ () => {navigate("/LaptopDetail/" + laptop.id)} }>
               <Card.Img variant="top" src={Laptops[i].imgPath} />
               <Card.Body>

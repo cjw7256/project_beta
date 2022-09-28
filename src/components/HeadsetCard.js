@@ -4,7 +4,7 @@ function HeadsetCard( {headsets, headset, i } ){
     let navigate = useNavigate();
     return (
         <Col>
-            <Card style={{ width: "18rem", cursor:"pointer" }} 
+            <Card style={{ width: "20rem",height:'35rem',margin:'1rem', cursor:"pointer" }}  
             onClick={ () => {navigate("/HeadsetDetail/" + headset.id)} }>
               <Card.Img variant="top" src={headsets[i].imgPath} />
               <Card.Body>

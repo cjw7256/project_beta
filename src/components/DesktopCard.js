@@ -4,7 +4,7 @@ function DesktopCard( {desktops, desktop, i } ){
     let navigate = useNavigate();
     return (
         <Col>
-            <Card style={{ width: "18rem", cursor:"pointer" }} 
+            <Card style={{ width: "20rem",height:'35rem',margin:'1rem', cursor:"pointer" }} 
             onClick={ () => {navigate("/ProductDetail/" + desktop.id)} }>
               <Card.Img variant="top" src={desktops[i].imgPath} />
               <Card.Body>
