@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Row,Button } from "react-bootstrap";
+import { Container, Row, Dropdown, DropdownButton, ButtonGroup } from "react-bootstrap";
 import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import MouseCard from './components/MouseCard.js'
@@ -94,23 +94,32 @@ function MouseList() {
           element={
             <div>
 
-              <div>
-                <Button  onClick={() => {
-                  let temp = [...mouses]
-                  temp = temp.sort((a, b) => {
-                    return a.price2 - b.price2
-                  })
-                  setMouses(temp)
-                }}>가격이 낮은순으로 정렬</Button>
-                <br/>
-                <br/>
-                <Button onClick={() => {
-                  let temp = [...mouses]
-                  temp = temp.sort((a, b) => {
-                    return b.price2 - a.price2
-                  })
-                  setMouses(temp)
-                }}>가격이 높은순으로 정렬</Button>
+              <div style={{ padding: "10px", position: 'relative', left: '423px' }}>
+                {[DropdownButton].map((DropdownType, idx) => (
+                  <DropdownType
+                    as={ButtonGroup}
+                    key={idx}
+                    id={`dropdown-button-drop-${idx}`}
+                    size="sm"
+                    variant="secondary"
+                    title="정렬하기"
+                  >
+                    <Dropdown.Item eventKey="1" onClick={() => {
+                      let temp = [...mouses]
+                      temp = temp.sort((a, b) => {
+                        return a.price2 - b.price2
+                      })
+                      setMouses(temp)
+                    }}>낮은 가격순</Dropdown.Item>
+                    <Dropdown.Item eventKey="2" onClick={() => {
+                      let temp = [...mouses]
+                      temp = temp.sort((a, b) => {
+                        return b.price2 - a.price2
+                      })
+                      setMouses(temp)
+                    }}>높은 가격순</Dropdown.Item>
+                  </DropdownType>
+                ))}
               </div>
 
               <Container>

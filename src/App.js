@@ -63,7 +63,7 @@ function App() {
       price: '1,069,000원',
       price2: 1069000,
       imgPath: "http://192.168.0.63:8898/images/computer3.jpg"
-    },    
+    },
     {
       id: 'ds004',
       itemName: 'NEW.신상 특별한이벤트.삼성정품.DM500SD/사은품증정~최다판매.고성능NVMe',
@@ -112,7 +112,7 @@ function App() {
       price2: 889000,
       imgPath: "http://192.168.0.63:8898/images/computer9.jpg"
     },
-    
+
   ])
   let [Laptops, setLaptops] = useState([
 
@@ -263,7 +263,7 @@ function App() {
       price2: 25410,
       imgPath: "http://192.168.0.63:8898/images/mouse9.jpg"
     },
-    
+
   ])
   let [keyboards, setKeyboards] = useState([
 
@@ -339,7 +339,7 @@ function App() {
       price2: 59900,
       imgPath: "http://192.168.0.63:8898/images/keyboard9.jpg"
     },
-    
+
   ])
   let [headsets, setHeadsets] = useState([
 
@@ -415,8 +415,8 @@ function App() {
       price2: 99000,
       imgPath: "http://192.168.0.63:8898/images/headset9.jpg"
     },
-    
-    
+
+
   ])
 
   return (
@@ -471,31 +471,40 @@ function App() {
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" onClick={() => { navigate("/desktoplist") }}/></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" onClick={() => { navigate("/laptoplist") }}/></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" onClick={() => { navigate("/desktoplist") }} /></SwiperSlide>
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" onClick={() => { navigate("/laptoplist") }} /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" onClick={() => { navigate("/MouseList") }} /></SwiperSlide>
                   <SwiperSlide><img src="http://127.0.0.1:8898/images/keyboard1.jpg" onClick={() => { navigate("/KeyboardList") }} /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/headset1.jpg"  onClick={() => { navigate("/HeadsetList") }} /></SwiperSlide>
-                  
+                  <SwiperSlide><img src="http://127.0.0.1:8898/images/headset1.jpg" onClick={() => { navigate("/HeadsetList") }} /></SwiperSlide>
+
                 </Swiper>
               </div>
-              <div>
-                <Button onClick={() => {
-                  let temp = [...desktops]
-                  temp = temp.sort((a, b) => {
-                    return a.price2 - b.price2
-                  })
-                  setDesktop(temp)
-                }}>가격이 낮은순으로 정렬</Button>
-                <br />
-                <br />
-                <Button onClick={() => {
-                  let temp = [...desktops]
-                  temp = temp.sort((a, b) => {
-                    return b.price2 - a.price2
-                  })
-                  setDesktop(temp)
-                }}>가격이 높은순으로 정렬</Button>
+              <div style={{ padding: "10px", position: 'relative', left: '423px' }}>
+                {[DropdownButton].map((DropdownType, idx) => (
+                  <DropdownType
+                    as={ButtonGroup}
+                    key={idx}
+                    id={`dropdown-button-drop-${idx}`}
+                    size="sm"
+                    variant="secondary"
+                    title="정렬하기"
+                  >
+                    <Dropdown.Item eventKey="1" onClick={() => {
+                      let temp = [...desktops]
+                      temp = temp.sort((a, b) => {
+                        return a.price2 - b.price2
+                      })
+                      setDesktop(temp)
+                    }}>낮은 가격순</Dropdown.Item>
+                    <Dropdown.Item eventKey="2" onClick={() => {
+                      let temp = [...desktops]
+                      temp = temp.sort((a, b) => {
+                        return b.price2 - a.price2
+                      })
+                      setDesktop(temp)
+                    }}>높은 가격순</Dropdown.Item>
+                  </DropdownType>
+                ))}
               </div>
               <Container>
                 <Row sm={1} md={3}>
