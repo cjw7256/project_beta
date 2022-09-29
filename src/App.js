@@ -524,11 +524,11 @@ function App() {
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/banner_bg.jpg" onClick={() => { navigate("/desktoplist") }} /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/laptop1.jpg" onClick={() => { navigate("/laptoplist") }} /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/mouse1.jpg" onClick={() => { navigate("/MouseList") }} /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/keyboard1.jpg" onClick={() => { navigate("/KeyboardList") }} /></SwiperSlide>
-                  <SwiperSlide><img src="http://127.0.0.1:8898/images/headset1.jpg" onClick={() => { navigate("/HeadsetList") }} /></SwiperSlide>
+                  <SwiperSlide><img src={banner_bg} onClick={() => { navigate("/desktoplist") }} /></SwiperSlide>
+                  <SwiperSlide><img src={laptop1} onClick={() => { navigate("/laptoplist") }} /></SwiperSlide>
+                  <SwiperSlide><img src={mouse1} onClick={() => { navigate("/MouseList") }} /></SwiperSlide>
+                  <SwiperSlide><img src={keyboard1} onClick={() => { navigate("/KeyboardList") }} /></SwiperSlide>
+                  <SwiperSlide><img src={headset1} onClick={() => { navigate("/HeadsetList") }} /></SwiperSlide>
 
                 </Swiper>
               </div>
