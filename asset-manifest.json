@@ -1,15 +1,33 @@
 {
   "files": {
     "main.css": "/project_beta/static/css/main.3852f859.css",
-    "main.js": "/project_beta/static/js/main.b3a3f6a5.js",
+    "main.js": "/project_beta/static/js/main.59ffac56.js",
     "static/js/787.0c3f432a.chunk.js": "/project_beta/static/js/787.0c3f432a.chunk.js",
+    "static/media/laptop3.jpg": "/project_beta/static/media/laptop3.3661b3008889e8d6f168.jpg",
+    "static/media/laptop9.jpg": "/project_beta/static/media/laptop9.d383edd23bff6ba77a0c.jpg",
+    "static/media/laptop7.jpg": "/project_beta/static/media/laptop7.e72af37e8a647b845c53.jpg",
+    "static/media/laptop6.jpg": "/project_beta/static/media/laptop6.3538a4078d781ae5f469.jpg",
+    "static/media/computer9.jpg": "/project_beta/static/media/computer9.73c225d88ce45e65e810.jpg",
+    "static/media/laptop2.jpg": "/project_beta/static/media/laptop2.7e54dff1a4d245be0eda.jpg",
+    "static/media/computer2.jpg": "/project_beta/static/media/computer2.a599262254c22caf4aae.jpg",
+    "static/media/computer3.jpg": "/project_beta/static/media/computer3.a599262254c22caf4aae.jpg",
+    "static/media/computer1.jpg": "/project_beta/static/media/computer1.775db8e1336f462df86f.jpg",
+    "static/media/laptop8.jpg": "/project_beta/static/media/laptop8.eeea195bc5c8a1a556f8.jpg",
+    "static/media/computer8.jpg": "/project_beta/static/media/computer8.2d37c978c2767a3eaf2f.jpg",
+    "static/media/computer6.jpg": "/project_beta/static/media/computer6.f07738f393e7d2bc3f56.jpg",
+    "static/media/laptop1.jpg": "/project_beta/static/media/laptop1.7930cd8e1e2d6c394489.jpg",
+    "static/media/computer5.jpg": "/project_beta/static/media/computer5.33131dad869df94191ab.jpg",
+    "static/media/computer4.jpg": "/project_beta/static/media/computer4.1b3dd48985b6da8a3739.jpg",
+    "static/media/laptop4.jpg": "/project_beta/static/media/laptop4.f2aed3bcf5b468fa55d2.jpg",
+    "static/media/computer7.jpg": "/project_beta/static/media/computer7.72ca9fcac6b43ca11401.jpg",
+    "static/media/laptop5.jpg": "/project_beta/static/media/laptop5.73ec646860735b34485d.jpg",
     "index.html": "/project_beta/index.html",
     "main.3852f859.css.map": "/project_beta/static/css/main.3852f859.css.map",
-    "main.b3a3f6a5.js.map": "/project_beta/static/js/main.b3a3f6a5.js.map",
+    "main.59ffac56.js.map": "/project_beta/static/js/main.59ffac56.js.map",
     "787.0c3f432a.chunk.js.map": "/project_beta/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3852f859.css",
-    "static/js/main.b3a3f6a5.js"
+    "static/js/main.59ffac56.js"
   ]
 }
