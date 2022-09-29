@@ -33,6 +33,9 @@ import "./styles.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+
+import banner_bg from './images/banner_bg.jpg'
+
 import computer1 from './images/computer1.jpg'
 import computer2 from './images/computer2.jpg'
 import computer3 from './images/computer3.jpg'
