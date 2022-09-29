@@ -33,6 +33,25 @@ import "./styles.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+import computer1 from './images/computer1.jpg'
+import computer2 from './images/computer2.jpg'
+import computer3 from './images/computer3.jpg'
+import computer4 from './images/computer4.jpg'
+import computer5 from './images/computer5.jpg'
+import computer6 from './images/computer6.jpg'
+import computer7 from './images/computer7.jpg'
+import computer8 from './images/computer8.jpg'
+import computer9 from './images/computer9.jpg'
+
+import laptop1 from './images/laptop1.jpg'
+import laptop2 from './images/laptop2.jpg'
+import laptop3 from './images/laptop3.jpg'
+import laptop4 from './images/laptop4.jpg'
+import laptop5 from './images/laptop5.jpg'
+import laptop6 from './images/laptop6.jpg'
+import laptop7 from './images/laptop7.jpg'
+import laptop8 from './images/laptop8.jpg'
+import laptop9 from './images/laptop9.jpg'
 
 function App() {
   let navigate = useNavigate();
@@ -46,7 +65,7 @@ function App() {
       content: 'CPU:인텔 코어 i5-10505\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '799,000원',
       price2: 799000,
-      imgPath: "http://192.168.0.63:8898/images/computer1.jpg"
+      imgPath: computer1
     },
     {
       id: 'ds002',
@@ -54,7 +73,7 @@ function App() {
       content: 'CPU:AMD 라이젠 5-4세대 5600X 3.7G\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 RTX3060 D6 12G',
       price: '1,029,000원',
       price2: 1029000,
-      imgPath: "http://192.168.0.63:8898/images/computer2.jpg"
+      imgPath: computer2
     },
     {
       id: 'ds003',
@@ -62,7 +81,7 @@ function App() {
       content: 'CPU:인텔12세대-i5 12400F 2.5G\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 RTX3060 D6 12G',
       price: '1,069,000원',
       price2: 1069000,
-      imgPath: "http://192.168.0.63:8898/images/computer3.jpg"
+      imgPath: computer3
     },
     {
       id: 'ds004',
@@ -70,7 +89,7 @@ function App() {
       content: 'CPU:인텔 12세대 Pentium 듀얼코어 G7400\n저장장치:SSD 256GB\n메모리:4GB DDR4\n그래픽:intel UHD Graphics 710',
       price: '648,000원',
       price2: 648000,
-      imgPath: "http://192.168.0.63:8898/images/computer4.jpg"
+      imgPath: computer4
     },
     {
       id: 'ds005',
@@ -78,7 +97,7 @@ function App() {
       content: 'CPU:10세대 인텔 코어 i3-10110U\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '929,000원',
       price2: 929000,
-      imgPath: "http://192.168.0.63:8898/images/computer5.jpg"
+      imgPath: computer5
     },
     {
       id: 'ds006',
@@ -86,7 +105,7 @@ function App() {
       content: 'CPU:인텔 코어 i3-1115G4 Processor\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '858,000원',
       price2: 858000,
-      imgPath: "http://192.168.0.63:8898/images/computer6.jpg"
+      imgPath: computer6
     },
     {
       id: 'ds007',
@@ -94,7 +113,7 @@ function App() {
       content: 'CPU:10세대 인텔 코어 i5-10400\n저장장치:SSD 240GB\n메모리:8GB DDR4\n그래픽:intel UHD 630',
       price: '630,520원',
       price2: 630520,
-      imgPath: "http://192.168.0.63:8898/images/computer7.jpg"
+      imgPath: computer7
     },
     {
       id: 'ds008',
@@ -102,7 +121,7 @@ function App() {
       content: 'CPU:AMD Ryzen5 5600X 버미어\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:AMD 라데온 RX 6600',
       price: '1,156,840원',
       price2: 1156840,
-      imgPath: "http://192.168.0.63:8898/images/computer8.jpg"
+      imgPath: computer8
     },
     {
       id: 'ds009',
@@ -110,7 +129,7 @@ function App() {
       content: 'CPU:라이젠 R5 5600X\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 GTX 1660 SUPER 6GB',
       price: '889,000원',
       price2: 889000,
-      imgPath: "http://192.168.0.63:8898/images/computer9.jpg"
+      imgPath: computer9
     },
 
   ])
@@ -122,7 +141,7 @@ function App() {
       content: 'CPU:AMD Ryzen5 5625U프로세서\nRAM:16GB\nSSD:256GB\n그래픽카드:AMD Radeon 내장형',
       price: '1,259,000원',
       price2: 1259000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop1.jpg"
+      imgPath: laptop1
     },
     {
       id: 'ls002',
@@ -130,7 +149,7 @@ function App() {
       content: 'CPU:i5-1240P\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:인텔 내장형',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop2.jpg"
+      imgPath: laptop2
     },
     {
       id: 'ls003',
@@ -138,7 +157,7 @@ function App() {
       content: 'CPU:i7-12700H\nRAM:16GB\nSSD:512GB\n그래픽카드:RTX3070Ti 8GB GDDR6',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop3.jpg"
+      imgPath: laptop3
     },
     {
       id: 'ls004',
@@ -146,7 +165,7 @@ function App() {
       content: 'CPU:기타\nRAM:8GB\nSSD:512GB\n그래픽카드:기타',
       price: '1,741,200원',
       price2: 1741200,
-      imgPath: "http://192.168.0.63:8898/images/Laptop4.jpg"
+      imgPath: laptop4
     },
     {
       id: 'ls005',
@@ -154,7 +173,7 @@ function App() {
       content: 'CPU:기타\nRAM:16GB\nSSD:256GB\n그래픽카드:기타',
       price: '1,858,200원',
       price2: 1858200,
-      imgPath: "http://192.168.0.63:8898/images/Laptop5.jpg"
+      imgPath: laptop5
     },
     {
       id: 'ls006',
@@ -162,7 +181,7 @@ function App() {
       content: 'CPU:AMD Ryzen 7\nRAM:16GB MHz\nSSD:512GB\n그래픽카드:RTX3050Ti',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop6.jpg"
+      imgPath: laptop6
     },
     {
       id: 'ls007',
@@ -170,7 +189,7 @@ function App() {
       content: 'CPU:INTEL Core i5\nRAM:16GB\nSSD:512GB\n그래픽카드:기타',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop7.jpg"
+      imgPath: laptop7
     },
     {
       id: 'ls008',
@@ -178,7 +197,7 @@ function App() {
       content: 'CPU:AMD RYZEN 5000 SERIES\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:기타',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop8.jpg"
+      imgPath: laptop8
     },
     {
       id: 'ls009',
@@ -186,7 +205,7 @@ function App() {
       content: 'CPU:AMD R5-5600H\nRAM:32GB \nSSD:512GB\n그래픽카드:RTX3050Ti',
       price: '1,199,000원',
       price2: 1199000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop9.jpg"
+      imgPath: laptop9
     },
   ])
   let [mouses, setMouses] = useState([
