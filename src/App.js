@@ -122,7 +122,7 @@ function App() {
       content: 'CPU:AMD Ryzen5 5625U프로세서\nRAM:16GB\nSSD:256GB\n그래픽카드:AMD Radeon 내장형',
       price: '1,259,000원',
       price2: 1259000,
-      imgPath: "http://127.0.0.1:8898/images/laptop1.jpg"
+      imgPath: "http://192.168.0.63:8898/images/Laptop1.jpg"
     },
     {
       id: 'ls002',
@@ -423,7 +423,7 @@ function App() {
     <div className="App">
       <Navbar bg="light" variant="light" className='hold'>
         <Container>
-          <Navbar.Brand href="/">COMSCLUB</Navbar.Brand>
+          <Navbar.Brand style={{cursor:"pointer"}}  onClick={() => { navigate("/") }}>COMSCLUB</Navbar.Brand>
           <Nav className="me-auto">
             <div className="mb-2">
               {[DropdownButton].map((DropdownType, idx) => (
@@ -445,7 +445,7 @@ function App() {
             </div>
           </Nav>
           <Nav className="user-login">
-            <Nav.Link onClick={() => { navigate("/login") }}>로그인132</Nav.Link>
+            <Nav.Link onClick={() => { navigate("/login") }}>로그인</Nav.Link>
             <Nav.Link onClick={() => { navigate("/join") }}>회원가입</Nav.Link>
           </Nav>
         </Container>
@@ -516,7 +516,7 @@ function App() {
                   })}
                 </Row>
               </Container>
-              
+
               <div className='footer'>
                 <p style={{color:'gray', textAlign:'left', marginLeft:'10rem', marginTop:'2rem'}}>
                   작성자 : 최정우<br/>
@@ -529,6 +529,7 @@ function App() {
             </div>
           }
         />    
+      
 
 
 
