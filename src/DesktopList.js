@@ -4,7 +4,15 @@ import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import DesktopCard from './components/DesktopCard.js'
 import ProductDetail from "./components/ProductDetail.js";
-
+import computer1 from './images/computer1.jpg'
+import computer2 from './images/computer2.jpg'
+import computer3 from './images/computer3.jpg'
+import computer4 from './images/computer4.jpg'
+import computer5 from './images/computer5.jpg'
+import computer6 from './images/computer6.jpg'
+import computer7 from './images/computer7.jpg'
+import computer8 from './images/computer8.jpg'
+import computer9 from './images/computer9.jpg'
 
 function DesktopList() {
   let [desktops, setDesktop] = useState([
@@ -15,7 +23,7 @@ function DesktopList() {
       content: 'CPU:인텔 코어 i5-10505\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '799,000원',
       price2: 799000,
-      imgPath: "http://192.168.0.63:8898/images/computer1.jpg"
+      imgPath: computer1
     },
     {
       id: 'ds002',
@@ -23,7 +31,7 @@ function DesktopList() {
       content: 'CPU:AMD 라이젠 5-4세대 5600X 3.7G\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 RTX3060 D6 12G',
       price: '1,029,000원',
       price2: 1029000,
-      imgPath: "http://192.168.0.63:8898/images/computer2.jpg"
+      imgPath: computer2
     },
     {
       id: 'ds003',
@@ -31,7 +39,7 @@ function DesktopList() {
       content: 'CPU:인텔12세대-i5 12400F 2.5G\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 RTX3060 D6 12G',
       price: '1,069,000원',
       price2: 1069000,
-      imgPath: "http://192.168.0.63:8898/images/computer3.jpg"
+      imgPath: computer3
     },
     {
       id: 'ds004',
@@ -39,7 +47,7 @@ function DesktopList() {
       content: 'CPU:인텔 12세대 Pentium 듀얼코어 G7400\n저장장치:SSD 256GB\n메모리:4GB DDR4\n그래픽:intel UHD Graphics 710',
       price: '648,000원',
       price2: 648000,
-      imgPath: "http://192.168.0.63:8898/images/computer4.jpg"
+      imgPath: computer4
     },
     {
       id: 'ds005',
@@ -47,7 +55,7 @@ function DesktopList() {
       content: 'CPU:10세대 인텔 코어 i3-10110U\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '929,000원',
       price2: 929000,
-      imgPath: "http://192.168.0.63:8898/images/computer5.jpg"
+      imgPath: computer5
     },
     {
       id: 'ds006',
@@ -55,7 +63,7 @@ function DesktopList() {
       content: 'CPU:인텔 코어 i3-1115G4 Processor\n저장장치:SSD 256GB\n메모리:8GB DDR4\n그래픽:intel UHD Graphics',
       price: '858,000원',
       price2: 858000,
-      imgPath: "http://192.168.0.63:8898/images/computer6.jpg"
+      imgPath: computer6
     },
     {
       id: 'ds007',
@@ -63,7 +71,7 @@ function DesktopList() {
       content: 'CPU:10세대 인텔 코어 i5-10400\n저장장치:SSD 240GB\n메모리:8GB DDR4\n그래픽:intel UHD 630',
       price: '630,520원',
       price2: 630520,
-      imgPath: "http://192.168.0.63:8898/images/computer7.jpg"
+      imgPath: computer7
     },
     {
       id: 'ds008',
@@ -71,7 +79,7 @@ function DesktopList() {
       content: 'CPU:AMD Ryzen5 5600X 버미어\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:AMD 라데온 RX 6600',
       price: '1,156,840원',
       price2: 1156840,
-      imgPath: "http://192.168.0.63:8898/images/computer8.jpg"
+      imgPath: computer8
     },
     {
       id: 'ds009',
@@ -79,8 +87,9 @@ function DesktopList() {
       content: 'CPU:라이젠 R5 5600X\n저장장치:SSD 512GB\n메모리:16GB DDR4\n그래픽:지포스 GTX 1660 SUPER 6GB',
       price: '889,000원',
       price2: 889000,
-      imgPath: "http://192.168.0.63:8898/images/computer9.jpg"
+      imgPath: computer9
     },
+
   ])
 
   return (

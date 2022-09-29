@@ -53,6 +53,37 @@ import laptop7 from './images/laptop7.jpg'
 import laptop8 from './images/laptop8.jpg'
 import laptop9 from './images/laptop9.jpg'
 
+import mouse1 from './images/mouse1.jpg'
+import mouse2 from './images/mouse2.jpg'
+import mouse3 from './images/mouse3.jpg'
+import mouse4 from './images/mouse4.jpg'
+import mouse5 from './images/mouse5.jpg'
+import mouse6 from './images/mouse6.jpg'
+import mouse7 from './images/mouse7.jpg'
+import mouse8 from './images/mouse8.jpg'
+import mouse9 from './images/mouse9.jpg'
+
+import keyboard1 from './images/keyboard1.jpg'
+import keyboard2 from './images/keyboard2.jpg'
+import keyboard3 from './images/keyboard3.jpg'
+import keyboard4 from './images/keyboard4.jpg'
+import keyboard5 from './images/keyboard5.jpg'
+import keyboard6 from './images/keyboard6.jpg'
+import keyboard7 from './images/keyboard7.jpg'
+import keyboard8 from './images/keyboard8.jpg'
+import keyboard9 from './images/keyboard9.jpg'
+
+import headset1 from './images/headset1.jpg'
+import headset2 from './images/headset2.jpg'
+import headset3 from './images/headset3.jpg'
+import headset4 from './images/headset4.jpg'
+import headset5 from './images/headset5.jpg'
+import headset6 from './images/headset6.jpg'
+import headset7 from './images/headset7.jpg'
+import headset8 from './images/headset8.jpg'
+import headset9 from './images/headset9.jpg'
+
+
 function App() {
   let navigate = useNavigate();
   let [showLogin, setShowLogin] = useState(true)
@@ -216,7 +247,7 @@ function App() {
       content: '해상도:240-4000dpi\nUSB 보고율:1000Hz\n버튼 내구성:2000만 클릭\n무게:144g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse1.jpg"
+      imgPath: mouse1
     },
     {
       id: 'ms002',
@@ -224,7 +255,7 @@ function App() {
       content: '해상도:200-12000dpi\nUSB 보고율:1000Hz\n버튼 내구성:1000만 클릭\n무게:99g',
       price: '44,690원',
       price2: 44690,
-      imgPath: "http://192.168.0.63:8898/images/mouse2.jpg"
+      imgPath: mouse2
     },
     {
       id: 'ms003',
@@ -232,7 +263,7 @@ function App() {
       content: '해상도:1800-12800dpi\n스캔율:7000fps\n버튼수:9개\n무게:116g',
       price: '39,900원',
       price2: 39900,
-      imgPath: "http://192.168.0.63:8898/images/mouse3.jpg"
+      imgPath: mouse3
     },
     {
       id: 'ms004',
@@ -240,7 +271,7 @@ function App() {
       content: '해상도:200-4000dpi\nUSB 보고율:1000Hz\n버튼 수:8개\n무게:144g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse4.jpg"
+      imgPath: mouse4
     },
     {
       id: 'ms005',
@@ -248,7 +279,7 @@ function App() {
       content: '송수신 장치 버전:Microsoft 2.4GHz\n무선 범위:3m\n무선 플랫폼:독점 2.4GHz\n배터리 수명:최대 12개월',
       price: '49,000원',
       price2: 49000,
-      imgPath: "http://192.168.0.63:8898/images/mouse5.jpg"
+      imgPath: mouse5
     },
     {
       id: 'ms006',
@@ -256,7 +287,7 @@ function App() {
       content: '무선주파수:2.4GHz 주파수 범위\n무선 범위:5~10m\n배터리 수명:최대 15개월\n무게:113g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse6.jpg"
+      imgPath: mouse6
     },
     {
       id: 'ms007',
@@ -264,7 +295,7 @@ function App() {
       content: '해상도:1000dpi\n배터리 수명:최대 24개월*\n무선 범위:약 10M\n무게:101g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse7.jpg"
+      imgPath: mouse7
     },
     {
       id: 'ms008',
@@ -272,7 +303,7 @@ function App() {
       content: '해상도:200-10000dpi\n스캔율:5000FPS\n버튼 내구성:2천만번 클릭\n무게:126g',
       price: '29,900원',
       price2: 29900,
-      imgPath: "http://192.168.0.63:8898/images/mouse8.jpg"
+      imgPath: mouse8
     },
     {
       id: 'ms009',
@@ -280,7 +311,7 @@ function App() {
       content: '해상도:200-8000dpi\nUSB 보고율:1000Hz\n\n무게:85g',
       price: '25,410원',
       price2: 25410,
-      imgPath: "http://192.168.0.63:8898/images/mouse9.jpg"
+      imgPath: mouse9
     },
 
   ])
@@ -292,7 +323,7 @@ function App() {
       content: '접점 방식:기계식 스위치\n키수:87키\n소비 전류:250mA\n무게:775g',
       price: '65,000원',
       price2: 65000,
-      imgPath: "http://192.168.0.63:8898/images/keyboard1.jpg"
+      imgPath: keyboard1
     },
     {
       id: 'ks002',
@@ -300,7 +331,7 @@ function App() {
       content: '접점 방식:기계식 스위치\n키수:104키\n소비 전류:300mA\n무게:924g',
       price: '59,800원',
       price2: 59800,
-      imgPath: "http://192.168.0.63:8898/images/keyboard2.jpg"
+      imgPath: keyboard2
     },
     {
       id: 'ks003',
@@ -308,7 +339,7 @@ function App() {
       content: '키보드 방식:축교환식 광축\n키 개수:104 Key\n폴링레이트:1000Hz\n무게:1243g',
       price: '38,500원',
       price2: 35800,
-      imgPath: "http://192.168.0.63:8898/images/keyboard3.jpg"
+      imgPath: keyboard3
     },
     {
       id: 'ks004',
@@ -316,7 +347,7 @@ function App() {
       content: '키보드 방식:축교환식 광축\n키 개수:104 Key\n폴링레이트:1000Hz\n무게:1243g',
       price: '41,800원',
       price2: 41800,
-      imgPath: "http://192.168.0.63:8898/images/keyboard4.jpg"
+      imgPath: keyboard4
     },
     {
       id: 'ks005',
@@ -324,7 +355,7 @@ function App() {
       content: '키보드 방식:JIXIAN 4.0 광축 스위치\n키 개수:104 Key\n폴링레이트:1000Hz\n무게:1080g',
       price: '47,300원',
       price2: 47300,
-      imgPath: "http://192.168.0.63:8898/images/keyboard5.jpg"
+      imgPath: keyboard5
     },
     {
       id: 'ks006',
@@ -332,7 +363,7 @@ function App() {
       content: '스위치:MANIC SWITCH\n키 개수:87 Key\n폴링레이트:1000Hz\n무게:817g',
       price: '81,400원',
       price2: 81400,
-      imgPath: "http://192.168.0.63:8898/images/keyboard6.jpg"
+      imgPath: keyboard6
     },
     {
       id: 'ks007',
@@ -340,7 +371,7 @@ function App() {
       content: '스위치:MANIC SWITCH\n키 개수:104 Key\n폴링레이트:1000Hz\n무게:1087g',
       price: '69,300원',
       price2: 69300,
-      imgPath: "http://192.168.0.63:8898/images/keyboard7.jpg"
+      imgPath: keyboard7
     },
     {
       id: 'ks008',
@@ -348,7 +379,7 @@ function App() {
       content: '스위치:MANIC SWITCH\n키 개수:104 Key\n폴링레이트:1000Hz\n무게:1184g',
       price: '66,000원',
       price2: 66000,
-      imgPath: "http://192.168.0.63:8898/images/keyboard8.jpg"
+      imgPath: keyboard8
     },
     {
       id: 'ks009',
@@ -356,7 +387,7 @@ function App() {
       content: '키 스위치:(청축, 갈축, 적축) 선택\n레이아웃:한글 104키\n측면 배열:스탭 스컬처 2\n무게:1.2Kg',
       price: '59,900원',
       price2: 59900,
-      imgPath: "http://192.168.0.63:8898/images/keyboard9.jpg"
+      imgPath: keyboard9
     },
 
   ])
@@ -368,7 +399,7 @@ function App() {
       content: 'Sound:Stereo Virtual 7.1CH\nSpeaker Sensitivity:119dB\nMicrophone Sensitivity:-42dB\nWeight:300g',
       price: '52,500원',
       price2: 52500,
-      imgPath: "http://192.168.0.63:8898/images/headset1.jpg"
+      imgPath: headset1
     },
     {
       id: 'hs002',
@@ -376,7 +407,7 @@ function App() {
       content: '충전 시간:4~5시간\n사용시간:LED 작동시: 약11시간 / 비작동시 약 20시간\n감도:(스피커)88dBV / (마이크)-36dBV\n무게:310g',
       price: '88,900원',
       price2: 88900,
-      imgPath: "http://192.168.0.63:8898/images/headset2.jpg"
+      imgPath: headset2
     },
     {
       id: 'hs003',
@@ -384,7 +415,7 @@ function App() {
       content: '충전 시간:3시간\n사용시간:LED 작동시: 약8시간 / 비작동시 약 11시간\n감도:(스피커)104dBV / (마이크)-42dBV\n무게:345g',
       price: '79,900원',
       price2: 79900,
-      imgPath: "http://192.168.0.63:8898/images/headset3.jpg"
+      imgPath: headset3
     },
     {
       id: 'hs004',
@@ -392,7 +423,7 @@ function App() {
       content: '사운드:7.1 서라운드 사운드\n주파수 응답: 100Hz-10kHz\n감도:106dB\n무게:275g',
       price: '52,500원',
       price2: 52500,
-      imgPath: "http://192.168.0.63:8898/images/headset4.jpg"
+      imgPath: headset4
     },
     {
       id: 'hs005',
@@ -400,7 +431,7 @@ function App() {
       content: '플랫폼:4-IN-1 멀티 플랫폼 연결\n주파수:20Hz~20kHz\n감도:96dBSPL/mW@1KHz\n무게:270g',
       price: '149,000원',
       price2: 149000,
-      imgPath: "http://192.168.0.63:8898/images/headset5.jpg"
+      imgPath: headset5
     },
     {
       id: 'hs006',
@@ -408,7 +439,7 @@ function App() {
       content: '타이핑:양방향ECM\n주파수:100Hz-18KHz\n감도:(마이크)-47dB/(스피커)94dB\n무게:111g',
       price: '60,500원',
       price2: 60500,
-      imgPath: "http://192.168.0.63:8898/images/headset6.jpg"
+      imgPath: headset6
     },
     {
       id: 'hs007',
@@ -416,7 +447,7 @@ function App() {
       content: '주파수 응답:20Hz-20kHz\n감도:96dBSPL/mW\n가상 서라운드 인코딩:THX Spatial Audio\n무게:325g',
       price: '149,000원',
       price2: 149000,
-      imgPath: "http://192.168.0.63:8898/images/headset7.jpg"
+      imgPath: headset7
     },
     {
       id: 'hs008',
@@ -424,7 +455,7 @@ function App() {
       content: '블루투스 버전:Bluetooth v4.1\n음압레벨:118dB\n사용시간:충전시간:2시간/사용시간14시간\n무게:250g',
       price: '59,900원',
       price2: 59900,
-      imgPath: "http://192.168.0.63:8898/images/headset8.jpg"
+      imgPath: headset8
     },
     {
       id: 'hs009',
@@ -432,7 +463,7 @@ function App() {
       content: '주파수:20Hz-20KHz\n민감도:83.1dB SPL/mW\n사용시간:18시간\무게:165g',
       price: '99,000원',
       price2: 99000,
-      imgPath: "http://192.168.0.63:8898/images/headset9.jpg"
+      imgPath: headset9
     },
 
 

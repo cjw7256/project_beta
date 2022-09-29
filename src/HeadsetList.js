@@ -4,10 +4,17 @@ import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import HeadsetCard from './components/HeadsetCard.js'
 import HeadsetDetail from "./components/HeadsetDetail.js";
-
+import headset1 from './images/headset1.jpg'
+import headset2 from './images/headset2.jpg'
+import headset3 from './images/headset3.jpg'
+import headset4 from './images/headset4.jpg'
+import headset5 from './images/headset5.jpg'
+import headset6 from './images/headset6.jpg'
+import headset7 from './images/headset7.jpg'
+import headset8 from './images/headset8.jpg'
+import headset9 from './images/headset9.jpg'
 
 function HeadsetList() {
-
 
   let [headsets, setHeadsets] = useState([
 
@@ -17,7 +24,7 @@ function HeadsetList() {
       content: 'Sound:Stereo Virtual 7.1CH\nSpeaker Sensitivity:119dB\nMicrophone Sensitivity:-42dB\nWeight:300g',
       price: '52,500원',
       price2: 52500,
-      imgPath: "http://192.168.0.63:8898/images/headset1.jpg"
+      imgPath: headset1
     },
     {
       id: 'hs002',
@@ -25,7 +32,7 @@ function HeadsetList() {
       content: '충전 시간:4~5시간\n사용시간:LED 작동시: 약11시간 / 비작동시 약 20시간\n감도:(스피커)88dBV / (마이크)-36dBV\n무게:310g',
       price: '88,900원',
       price2: 88900,
-      imgPath: "http://192.168.0.63:8898/images/headset2.jpg"
+      imgPath: headset2
     },
     {
       id: 'hs003',
@@ -33,7 +40,7 @@ function HeadsetList() {
       content: '충전 시간:3시간\n사용시간:LED 작동시: 약8시간 / 비작동시 약 11시간\n감도:(스피커)104dBV / (마이크)-42dBV\n무게:345g',
       price: '79,900원',
       price2: 79900,
-      imgPath: "http://192.168.0.63:8898/images/headset3.jpg"
+      imgPath: headset3
     },
     {
       id: 'hs004',
@@ -41,7 +48,7 @@ function HeadsetList() {
       content: '사운드:7.1 서라운드 사운드\n주파수 응답: 100Hz-10kHz\n감도:106dB\n무게:275g',
       price: '52,500원',
       price2: 52500,
-      imgPath: "http://192.168.0.63:8898/images/headset4.jpg"
+      imgPath: headset4
     },
     {
       id: 'hs005',
@@ -49,7 +56,7 @@ function HeadsetList() {
       content: '플랫폼:4-IN-1 멀티 플랫폼 연결\n주파수:20Hz~20kHz\n감도:96dBSPL/mW@1KHz\n무게:270g',
       price: '149,000원',
       price2: 149000,
-      imgPath: "http://192.168.0.63:8898/images/headset5.jpg"
+      imgPath: headset5
     },
     {
       id: 'hs006',
@@ -57,7 +64,7 @@ function HeadsetList() {
       content: '타이핑:양방향ECM\n주파수:100Hz-18KHz\n감도:(마이크)-47dB/(스피커)94dB\n무게:111g',
       price: '60,500원',
       price2: 60500,
-      imgPath: "http://192.168.0.63:8898/images/headset6.jpg"
+      imgPath: headset6
     },
     {
       id: 'hs007',
@@ -65,7 +72,7 @@ function HeadsetList() {
       content: '주파수 응답:20Hz-20kHz\n감도:96dBSPL/mW\n가상 서라운드 인코딩:THX Spatial Audio\n무게:325g',
       price: '149,000원',
       price2: 149000,
-      imgPath: "http://192.168.0.63:8898/images/headset7.jpg"
+      imgPath: headset7
     },
     {
       id: 'hs008',
@@ -73,7 +80,7 @@ function HeadsetList() {
       content: '블루투스 버전:Bluetooth v4.1\n음압레벨:118dB\n사용시간:충전시간:2시간/사용시간14시간\n무게:250g',
       price: '59,900원',
       price2: 59900,
-      imgPath: "http://192.168.0.63:8898/images/headset8.jpg"
+      imgPath: headset8
     },
     {
       id: 'hs009',
@@ -81,7 +88,7 @@ function HeadsetList() {
       content: '주파수:20Hz-20KHz\n민감도:83.1dB SPL/mW\n사용시간:18시간\무게:165g',
       price: '99,000원',
       price2: 99000,
-      imgPath: "http://192.168.0.63:8898/images/headset9.jpg"
+      imgPath: headset9
     },
 
 

@@ -4,10 +4,17 @@ import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import MouseCard from './components/MouseCard.js'
 import MouseDetail from "./components/MouseDetail.js";
-
+import mouse1 from './images/mouse1.jpg'
+import mouse2 from './images/mouse2.jpg'
+import mouse3 from './images/mouse3.jpg'
+import mouse4 from './images/mouse4.jpg'
+import mouse5 from './images/mouse5.jpg'
+import mouse6 from './images/mouse6.jpg'
+import mouse7 from './images/mouse7.jpg'
+import mouse8 from './images/mouse8.jpg'
+import mouse9 from './images/mouse9.jpg'
 
 function MouseList() {
-
 
   let [mouses, setMouses] = useState([
 
@@ -17,7 +24,7 @@ function MouseList() {
       content: '해상도:240-4000dpi\nUSB 보고율:1000Hz\n버튼 내구성:2000만 클릭\n무게:144g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse1.jpg"
+      imgPath: mouse1
     },
     {
       id: 'ms002',
@@ -25,7 +32,7 @@ function MouseList() {
       content: '해상도:200-12000dpi\nUSB 보고율:1000Hz\n버튼 내구성:1000만 클릭\n무게:99g',
       price: '44,690원',
       price2: 44690,
-      imgPath: "http://192.168.0.63:8898/images/mouse2.jpg"
+      imgPath: mouse2
     },
     {
       id: 'ms003',
@@ -33,7 +40,7 @@ function MouseList() {
       content: '해상도:1800-12800dpi\n스캔율:7000fps\n버튼수:9개\n무게:116g',
       price: '39,900원',
       price2: 39900,
-      imgPath: "http://192.168.0.63:8898/images/mouse3.jpg"
+      imgPath: mouse3
     },
     {
       id: 'ms004',
@@ -41,7 +48,7 @@ function MouseList() {
       content: '해상도:200-4000dpi\nUSB 보고율:1000Hz\n버튼 수:8개\n무게:144g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse4.jpg"
+      imgPath: mouse4
     },
     {
       id: 'ms005',
@@ -49,7 +56,7 @@ function MouseList() {
       content: '송수신 장치 버전:Microsoft 2.4GHz\n무선 범위:3m\n무선 플랫폼:독점 2.4GHz\n배터리 수명:최대 12개월',
       price: '49,000원',
       price2: 49000,
-      imgPath: "http://192.168.0.63:8898/images/mouse5.jpg"
+      imgPath: mouse5
     },
     {
       id: 'ms006',
@@ -57,7 +64,7 @@ function MouseList() {
       content: '무선주파수:2.4GHz 주파수 범위\n무선 범위:5~10m\n배터리 수명:최대 15개월\n무게:113g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse6.jpg"
+      imgPath: mouse6
     },
     {
       id: 'ms007',
@@ -65,7 +72,7 @@ function MouseList() {
       content: '해상도:1000dpi\n배터리 수명:최대 24개월*\n무선 범위:약 10M\n무게:101g',
       price: '49,900원',
       price2: 49900,
-      imgPath: "http://192.168.0.63:8898/images/mouse7.jpg"
+      imgPath: mouse7
     },
     {
       id: 'ms008',
@@ -73,7 +80,7 @@ function MouseList() {
       content: '해상도:200-10000dpi\n스캔율:5000FPS\n버튼 내구성:2천만번 클릭\n무게:126g',
       price: '29,900원',
       price2: 29900,
-      imgPath: "http://192.168.0.63:8898/images/mouse8.jpg"
+      imgPath: mouse8
     },
     {
       id: 'ms009',
@@ -81,8 +88,9 @@ function MouseList() {
       content: '해상도:200-8000dpi\nUSB 보고율:1000Hz\n\n무게:85g',
       price: '25,410원',
       price2: 25410,
-      imgPath: "http://192.168.0.63:8898/images/mouse9.jpg"
+      imgPath: mouse9
     },
+
   ])
 
 

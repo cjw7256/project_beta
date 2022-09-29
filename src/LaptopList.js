@@ -4,7 +4,15 @@ import { Routes, Route, } from "react-router-dom";
 import { useState } from 'react';
 import LaptopCard from './components/LaptopCard.js'
 import LaptopDetail from "./components/LaptopDetail.js";
-
+import laptop1 from './images/laptop1.jpg'
+import laptop2 from './images/laptop2.jpg'
+import laptop3 from './images/laptop3.jpg'
+import laptop4 from './images/laptop4.jpg'
+import laptop5 from './images/laptop5.jpg'
+import laptop6 from './images/laptop6.jpg'
+import laptop7 from './images/laptop7.jpg'
+import laptop8 from './images/laptop8.jpg'
+import laptop9 from './images/laptop9.jpg'
 
 function LaptopList() {
 
@@ -17,7 +25,7 @@ function LaptopList() {
       content: 'CPU:AMD Ryzen5 5625U프로세서\nRAM:16GB\nSSD:256GB\n그래픽카드:AMD Radeon 내장형',
       price: '1,259,000원',
       price2: 1259000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop1.jpg"
+      imgPath: laptop1
     },
     {
       id: 'ls002',
@@ -25,7 +33,7 @@ function LaptopList() {
       content: 'CPU:i5-1240P\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:인텔 내장형',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop2.jpg"
+      imgPath: laptop2
     },
     {
       id: 'ls003',
@@ -33,7 +41,7 @@ function LaptopList() {
       content: 'CPU:i7-12700H\nRAM:16GB\nSSD:512GB\n그래픽카드:RTX3070Ti 8GB GDDR6',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop3.jpg"
+      imgPath: laptop3
     },
     {
       id: 'ls004',
@@ -41,7 +49,7 @@ function LaptopList() {
       content: 'CPU:기타\nRAM:8GB\nSSD:512GB\n그래픽카드:기타',
       price: '1,741,200원',
       price2: 1741200,
-      imgPath: "http://192.168.0.63:8898/images/Laptop4.jpg"
+      imgPath: laptop4
     },
     {
       id: 'ls005',
@@ -49,7 +57,7 @@ function LaptopList() {
       content: 'CPU:기타\nRAM:16GB\nSSD:256GB\n그래픽카드:기타',
       price: '1,858,200원',
       price2: 1858200,
-      imgPath: "http://192.168.0.63:8898/images/Laptop5.jpg"
+      imgPath: laptop5
     },
     {
       id: 'ls006',
@@ -57,7 +65,7 @@ function LaptopList() {
       content: 'CPU:AMD Ryzen 7\nRAM:16GB MHz\nSSD:512GB\n그래픽카드:RTX3050Ti',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop6.jpg"
+      imgPath: laptop6
     },
     {
       id: 'ls007',
@@ -65,7 +73,7 @@ function LaptopList() {
       content: 'CPU:INTEL Core i5\nRAM:16GB\nSSD:512GB\n그래픽카드:기타',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop7.jpg"
+      imgPath: laptop7
     },
     {
       id: 'ls008',
@@ -73,7 +81,7 @@ function LaptopList() {
       content: 'CPU:AMD RYZEN 5000 SERIES\nRAM:16GB\nSSD:256GB+확장 슬롯1\n그래픽카드:기타',
       price: '1,749,000원',
       price2: 1749000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop8.jpg"
+      imgPath: laptop8
     },
     {
       id: 'ls009',
@@ -81,7 +89,7 @@ function LaptopList() {
       content: 'CPU:AMD R5-5600H\nRAM:32GB \nSSD:512GB\n그래픽카드:RTX3050Ti',
       price: '1,199,000원',
       price2: 1199000,
-      imgPath: "http://192.168.0.63:8898/images/Laptop9.jpg"
+      imgPath: laptop9
     },
   ])
 
